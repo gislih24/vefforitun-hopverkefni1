@@ -1,0 +1,27 @@
+/* Online CSS validator: https://jigsaw.w3.org/css-validator/ */
+/* Colors they used: 
+Piano colors: #e74c3c, #f1c40f, #2ecc71, #3498db
+Piano colors when clicked: #73261e, #786207, #176638, #1a4c6d
+Background color: #2c3e50#
+UI color thing: #1abd9c*/
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2c3e50;
+}
+
+select {
+    width: 10rem;
+    background-color: white;
+    border:white 2px solid;
+    border-radius: 3%;
+}
+
+select>option {
+    background-color: white;
+    border-radius: 30%;
+}
+
+.soundSelect:hover{
+    background-color: #1abd9c;
+}
