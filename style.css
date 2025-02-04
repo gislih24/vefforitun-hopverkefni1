@@ -6,6 +6,9 @@ Background color: #2c3e50
 UI color thing: #1abd9c */
 * {
     font-family: 'Courier New', Courier, monospace;
+}
+
+body {
     background-color: #2c3e50;
 }
 
@@ -25,30 +28,30 @@ select>option {
     background-color: #1abd9c;
 }
 
-#red_button {
+/* All button elements. */
+button {
     border: none;
+}
+
+/* All elements with the class "colored-button". */
+.colored-button {
     height: 50px;
     width: 50px;
+}
+
+/* All elements with the id "red-button" + the class "colored-button". */
+#red-button.colored-button {
     background-color: #e74c3c;
 }
 
-#yellow_button {
-    border: none;
-    height: 50px;
-    width: 50px;
+#yellow-button.colored-button {
     background-color: #f1c40f;
 }
 
-#green_button {
-    border: none;
-    height: 50px;
-    width: 50px;
+#green-button.colored-button {
     background-color: #2ecc71;
 }
 
-#blue_button {
-    border: none;
-    height: 50px;
-    width: 50px;
+#blue-button.colored-button {
     background-color: #3498db;
 }
