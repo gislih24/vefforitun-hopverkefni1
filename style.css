@@ -40,19 +40,34 @@ button {
     width: 50px;
 }
 
-/* All elements with the id "red-button" + the class "colored-button". */
 #red-button.colored-button {
     background-color: #e74c3c;
+}
+
+#red-button.colored-button:hover {
+    background-color: #73261e;
 }
 
 #yellow-button.colored-button {
     background-color: #f1c40f;
 }
 
+#yellow-button.colored-button:hover {
+    background-color: #786207;
+}
+
 #green-button.colored-button {
     background-color: #2ecc71;
 }
 
+#green-button.colored-button:hover {
+    background-color: #176638;
+}
+
 #blue-button.colored-button {
     background-color: #3498db;
+}
+
+#blue-button.colored-button:hover {
+    background-color: #1a4c6d;
 }
