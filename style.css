@@ -80,7 +80,7 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     position: relative;
-    gap: 10px;
+    gap: 20px;
 }
 
 #clickCounter {
@@ -92,9 +92,9 @@ button {
 
 /* All elements with the class "colored-button". */
 .colored-button {
-    height: 10vw;
-    width: 10vw;
-    border-radius: 20%;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 10%;
     padding: 10px;
 }
 
