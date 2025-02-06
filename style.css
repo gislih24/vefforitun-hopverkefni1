@@ -42,73 +42,131 @@ body {
 
 select {
     cursor: pointer;
-    width: auto;
     background-color: white;
     border: 2px solid white;
     border-radius: 3%;
+    padding: 0.2rem;
 }
 
 select>option {
     background-color: white;
-    border-radius: 30%;
 }
 
-.soundSelect:hover {
-    background-color: var(--mountain-meadow);
+.colored-buttons-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2vw;
+    position: relative;
+    margin: 1rem 0;
 }
 
-/* All button elements. */
-button {
+.colored-button {
+    width: 18vw;
+    height: 18vw;
     border: none;
+    border-radius: 10%;
     cursor: pointer;
+}
+
+#red-button {
+    background-color: var(--cinnabar);
+}
+
+#red-button:hover {
+    background-color: var(--well-read);
+}
+
+#red-button:active {
+    background-color: var(--metallic-copper);
+}
+
+#yellow-button {
+    background-color: var(--buttercup);
+}
+
+#yellow-button:hover {
+    background-color: var(--marigold);
+}
+
+#yellow-button:active {
+    background-color: var(--reef-gold);
+}
+
+#green-button {
+    background-color: var(--shamrock);
+}
+
+#green-button:hover {
+    background-color: var(--eucalyptus);
+}
+
+#green-button:active {
+    background-color: var(--jewel);
+}
+
+#blue-button {
+    background-color: var(--curious-blue);
+}
+
+#blue-button:hover {
+    background-color: var(--jelly-bean);
+}
+
+#blue-button:active {
+    background-color: var(--blumine);
 }
 
 #clickCounter {
     position: absolute;
-    width: 10vw;
-    height: 10vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 10vw;
+    height: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid;
-    border-width: 5px;
-    border-color: var(--mountain-meadow);
+    border: 5px solid var(--mountain-meadow);
     border-radius: 50%;
     background-color: var(--pickled-bluewood);
+    font-size: 1.5rem;
 }
 
 #control-buttons-div {
+    margin: 1rem 0;
     padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .control-button {
     background-color: var(--wet-asphalt);
     color: white;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding: 0.5vw 1vw;
+    border: none;
     border-radius: 10%;
     font-size: 1rem;
-    width: auto;
-    height: auto;
+    cursor: pointer;
 }
 
-.control-button#replay-button {
-    cursor: not-allowed;
+#replay-button {
     background-color: var(--silver-sand);
     color: var(--iron);
+    cursor: not-allowed;
 }
 
 .control-button:active {
     background-color: var(--mountain-meadow);
 }
 
-#info-circle {
+.info-container {
     position: relative;
+    display: inline-block;
+}
+
+#info-circle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -133,74 +191,14 @@ button {
     position: absolute;
     width: 20vw;
     white-space: normal;
-    word-wrap: break-word;
     transition: visibility 0s, opacity 0.4s ease-in-out;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0.5rem;
 }
 
-#info-circle:hover + #info-circle-tooltip {
+.info-container:hover #info-circle-tooltip {
     visibility: visible;
     opacity: 1;
-}
-
-.colored-buttons-div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    position: relative;
-    gap: 2vw;
-}
-
-/* All elements with the class "colored-button". */
-.colored-button {
-    height: 18vw;
-    width: 18vw;
-    border-radius: 10%;
-}
-
-#red-button.colored-button {
-    background-color: var(--cinnabar);
-}
-
-#red-button.colored-button:hover {
-    background-color: var(--well-read);
-}
-
-#red-button.colored-button:active {
-    background-color: var(--metallic-copper);
-}
-
-#yellow-button.colored-button {
-    background-color: var(--buttercup);
-}
-
-#yellow-button.colored-button:hover {
-    background-color: var(--marigold);
-}
-
-#yellow-button.colored-button:active {
-    background-color: var(--reef-gold);
-}
-
-#green-button.colored-button {
-    background-color: var(--shamrock);
-}
-
-#green-button.colored-button:hover {
-    background-color: var(--eucalyptus);
-}
-
-#green-button.colored-button:active {
-    background-color: var(--jewel);
-}
-
-#blue-button.colored-button {
-    background-color: var(--curious-blue);
-}
-
-#blue-button.colored-button:hover {
-    background-color: var(--jelly-bean);
-}
-
-#blue-button.colored-button:active {
-    background-color: var(--blumine);
 }

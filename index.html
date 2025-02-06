@@ -12,26 +12,33 @@
 <body>
     <div class="sound-selector-div">
         <label for="soundSelector">Select sound:</label>
-        <select name="soundSelector" id="soundSelector">
+        <select id="soundSelector" name="soundSelector">
             <option value="Sine">Sine</option>
             <option value="Square">Square</option>
             <option value="Triangle">Triangle</option>
         </select>
     </div>
+
     <div class="colored-buttons-div">
         <span id="clickCounter">1</span>
         <button type="button" class="colored-button" id="red-button"></button>
         <button type="button" class="colored-button" id="yellow-button"></button>
         <button type="button" class="colored-button" id="green-button"></button>
         <button type="button" class="colored-button" id="blue-button"></button>
-        <!-- to be implemented later -->
     </div>
+
     <div id="control-buttons-div">
         <button type="button" class="control-button" id="start-button">Start</button>
         <button type="button" class="control-button" id="replay-button">Replay</button>
-        <span id="info-circle">!</span>
-        <span id="info-circle-tooltip">Press the Start button to begin the game. At each level, repeat the sequence displayed on the board. If you need to review the sequence before making your move, press the Replay button.</span>
+        <div class="info-container">
+            <span id="info-circle">!</span>
+            <span id="info-circle-tooltip">
+                Press the Start button to begin the game. At each level, repeat the sequence displayed on the board.
+                If you need to review the sequence before making your move, press the Replay button.
+            </span>
+        </div>
     </div>
+
     <div>
         High Score: <span id="high-score">0</span>
     </div>
