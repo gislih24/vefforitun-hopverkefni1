@@ -53,12 +53,28 @@ button {
     line-height: 50px;
 }
 
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+#red-yellow-group.button-group {
+    height: 40vh;
+}
+
+#green-blue-group.button-group {
+    height: -400vh;
+}
+
 /* All elements with the class "colored-button". */
 .colored-button {
     height: 10vw;
     width: 10vw;
     border-radius: 20%;
-    margin: auto;
+    padding: 10px;
 }
 
 #red-button.colored-button {
