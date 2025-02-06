@@ -10,27 +10,25 @@
 </head>
 
 <body>
-    <label for="soundSelector">Select sound:</label>
-    <select name="soundSelector" id="soundSelector">
-        <option value="Sine">Sine</option>
-        <option value="Square">Square</option>
-        <option value="Triangle">Triangle</option>
-    </select>
-    <div class="button-group" id="red-yellow-group">
+    <div class="sound-selector-div">
+        <label for="soundSelector">Select sound:</label>
+        <select name="soundSelector" id="soundSelector">
+            <option value="Sine">Sine</option>
+            <option value="Square">Square</option>
+            <option value="Triangle">Triangle</option>
+        </select>
+    </div>
+    <div class="button-group">
         <button type="button" class="colored-button" id="red-button"></button>
         <button type="button" class="colored-button" id="yellow-button"></button>
-    </div>
-    <!-- to be added later -->
-    <p>Red/Yellow Clicks: <span id="clickCounter1">0</span></p>
-    <div class="button-group" id="green-blue-group">
         <button type="button" class="colored-button" id="green-button"></button>
         <button type="button" class="colored-button" id="blue-button"></button>
+        <!-- to be implemented later -->
+        <span id="clickCounter">1</span>
     </div>
-    <!-- to be added later -->
-    <p>Green/Blue Clicks: <span id="clickCounter2">0</span></p>
-    <div id="control-buttons"></div>
-    <button type="button" id="start-button">Start</button>
-    <button type="button" id="replay-button">Replay</button>
+    <div id="control-buttons">
+        <button type="button" id="start-button">Start</button>
+        <button type="button" id="replay-button">Replay</button>
     </div>
     <div>
         High Score: <span id="high-score">0</span>
