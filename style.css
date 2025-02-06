@@ -13,6 +13,7 @@ body {
     background-color: #2c3e50;
 }
 
+<<<<<<< Updated upstream
 select {
     width: 10rem;
     background-color: white;
@@ -93,3 +94,6 @@ button {
 #blue-button.colored-button:hover {
     background-color: #1a4c6d;
 }
+=======
+
+>>>>>>> Stashed changes
