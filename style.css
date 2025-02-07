@@ -212,3 +212,43 @@ select>option {
     visibility: visible;
     opacity: 1;
 }
+
+/* High score container */
+.high-score-container {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+/* Error message */
+.error-message {
+    display: none;
+    /* Hidden by default; shown via media query */
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.error-message img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Responsive design stufff */
+/* When viewport is ≤599px, hide the game and show the error message */
+@media (max-width: 599px) {
+    #game-content {
+        display: none;
+    }
+
+    .error-message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* When viewport is ≥600px, hide the error message */
+@media (min-width: 600px) {
+    .error-message {
+        display: none;
+    }
+}
