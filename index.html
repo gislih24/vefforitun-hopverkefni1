@@ -10,22 +10,24 @@
 </head>
 
 <body>
-    <div class="sound-selector-div">
-        <label for="soundSelector">Select sound:</label>
-        <select id="soundSelector" name="soundSelector">
-            <option value="Sine">Sine</option>
-            <option value="Square">Square</option>
-            <option value="Triangle">Triangle</option>
-        </select>
-    </div>
+    <!-- Game content: visible when viewport is 600px or wider -->
+    <div id="game-content">
+        <div class="sound-selector-div">
+            <label for="soundSelector">Select sound:</label>
+            <select id="soundSelector" name="soundSelector">
+                <option value="Sine">Sine</option>
+                <option value="Square">Square</option>
+                <option value="Triangle">Triangle</option>
+            </select>
+        </div>
 
-    <div class="colored-buttons-div">
-        <span id="clickCounter">1</span>
-        <button type="button" class="colored-button" id="red-button"></button>
-        <button type="button" class="colored-button" id="yellow-button"></button>
-        <button type="button" class="colored-button" id="green-button"></button>
-        <button type="button" class="colored-button" id="blue-button"></button>
-    </div>
+        <div class="colored-buttons-div">
+            <span id="clickCounter">1</span>
+            <button type="button" class="colored-button" id="red-button"></button>
+            <button type="button" class="colored-button" id="yellow-button"></button>
+            <button type="button" class="colored-button" id="green-button"></button>
+            <button type="button" class="colored-button" id="blue-button"></button>
+        </div>
 
     <div id="control-buttons-div">
         <button type="button" class="control-button" id="start-button">Start</button>
@@ -39,8 +41,15 @@
         </div>
     </div>
 
-    <div>
-        High Score: <span id="high-score">0</span>
+        <div class="high-score-container">
+            High Score: <span id="high-score">0</span>
+        </div>
+    </div>
+
+    <!-- when viewport is ≤ 599px -->
+    <div class="error-message">
+        <img src="oops.jpg" alt="Error: Screen too narrow">
+        <p>Your screen is too narrow to display the game. Please enlarge your window.</p>
     </div>
 </body>
 
