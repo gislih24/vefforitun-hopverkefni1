@@ -176,16 +176,8 @@ select>option {
 }
 
 #info-circle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     width: 20px;
     height: 20px;
-    background-color: var(--mountain-meadow);
-    color: var(--pickled-bluewood);
-    font-weight: bolder;
-    font-size: 18px;
-    border-radius: 50%;
     cursor: help;
 }
 
