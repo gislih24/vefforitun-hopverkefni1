@@ -1,12 +1,11 @@
 /* Online CSS validator: https://jigsaw.w3.org/css-validator/ */
 /* Colors they used: 
-Piano colors:              #e74c3c, #f1c40f, #2ecc71, #3498db
-Piano colors when hovered: #ad392d, #b6940c, #239a55, #2773a5
-Piano colors when clicked: #73261e, #786207, #176638, #1a4c6d
-Background color: #2c3e50
-Secondary background color thing: #34495e
-Yet another background color thing: #35485d
-UI color thing: #1abd9c */
+    Piano colors:              #e74c3c, #f1c40f, #2ecc71, #3498db
+    Piano colors when hovered: #ad392d, #b6940c, #239a55, #2773a5
+    Piano colors when clicked: #73261e, #786207, #176638, #1a4c6d
+    Background color: #2c3e50
+    Secondary background color thing: #34495e
+    UI color thing: #1abd9c */
 :root {
     --mountain-meadow: #1abd9c;
     --pickled-bluewood: #2d3d4f;
@@ -40,7 +39,8 @@ body {
     color: white;
 }
 
-select {
+/* Sound selector */
+.sound-selector-div select {
     cursor: pointer;
     background-color: white;
     border: 2px solid white;
@@ -52,6 +52,7 @@ select>option {
     background-color: white;
 }
 
+/* Colored buttons */
 .colored-buttons-div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -69,6 +70,7 @@ select>option {
     cursor: pointer;
 }
 
+/* Red button */
 #red-button {
     background-color: var(--cinnabar);
 }
@@ -81,6 +83,7 @@ select>option {
     background-color: var(--metallic-copper);
 }
 
+/* Yellow button */
 #yellow-button {
     background-color: var(--buttercup);
 }
@@ -93,6 +96,7 @@ select>option {
     background-color: var(--reef-gold);
 }
 
+/* Green button */
 #green-button {
     background-color: var(--shamrock);
 }
@@ -105,6 +109,7 @@ select>option {
     background-color: var(--jewel);
 }
 
+/* Blue button */
 #blue-button {
     background-color: var(--curious-blue);
 }
@@ -117,6 +122,7 @@ select>option {
     background-color: var(--blumine);
 }
 
+/* Click counter */
 #clickCounter {
     position: absolute;
     top: 50%;
@@ -133,6 +139,7 @@ select>option {
     font-size: 1.5rem;
 }
 
+/* Control buttons */
 #control-buttons-div {
     margin: 1rem 0;
     padding-top: 10px;
@@ -151,6 +158,7 @@ select>option {
     cursor: pointer;
 }
 
+/* Disabled button */
 #replay-button {
     background-color: var(--silver-sand);
     color: var(--iron);
@@ -161,6 +169,7 @@ select>option {
     background-color: var(--mountain-meadow);
 }
 
+/* Info icon and tooltip */
 .info-container {
     position: relative;
     display: inline-block;
@@ -180,6 +189,7 @@ select>option {
     cursor: help;
 }
 
+/* Tooltip for the information icon */
 #info-circle-tooltip {
     visibility: hidden;
     opacity: 0;
